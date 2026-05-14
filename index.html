@@ -12,7 +12,10 @@
     color: #1a1a1a;
     background: #fff;
   }
-  h1 { font-size: 1.15rem; font-weight: 600; margin: 0 0 18px; }
+  header { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+  h1 { font-size: 1.15rem; font-weight: 600; margin: 0; }
+  nav a { color: #06c; text-decoration: none; font-size: 0.9rem; }
+  nav a:hover { text-decoration: underline; }
   .wrap { display: flex; align-items: flex-start; gap: 16px; max-width: 1500px; }
   .grid-area { flex: 1; min-width: 0; overflow-x: auto; }
   .axis-wrap {
@@ -116,7 +119,10 @@
 </style>
 </head>
 <body>
-  <h1>제주방언 문법 연구: 형식 × 기능 (호버 시 논문 목록)</h1>
+  <header>
+    <h1>제주방언 문법 연구: 형식 × 기능 (호버 시 논문 목록)</h1>
+    <nav><a href="papers.html">전체 서지 표 보기 →</a></nav>
+  </header>
 
   <div class="wrap">
     <div class="grid-area">

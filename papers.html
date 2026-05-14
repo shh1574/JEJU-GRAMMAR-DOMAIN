@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>제주방언 문법 연구 서지 (총 175편)</title>
+<style>
+  body {
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic",
+                 system-ui, -apple-system, sans-serif;
+    margin: 28px; color: #1a1a1a; background: #fff;
+  }
+  header { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  h1 { font-size: 1.15rem; font-weight: 600; margin: 0 0 12px; }
+  nav a { color: #06c; text-decoration: none; font-size: 0.9rem; }
+  nav a:hover { text-decoration: underline; }
+  .toolbar {
+    display: flex; gap: 12px; align-items: center; margin: 8px 0 14px;
+    flex-wrap: wrap;
+  }
+  .toolbar input[type="search"] {
+    width: 320px; padding: 7px 10px; border: 1px solid #bbb;
+    border-radius: 4px; font-size: 0.95rem;
+  }
+  .toolbar .count { color: #555; font-size: 0.9rem; }
+  table {
+    border-collapse: collapse; width: 100%; max-width: 1400px;
+    font-size: 0.92rem;
+  }
+  th, td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 10px; text-align: left; vertical-align: top;
+  }
+  thead th {
+    position: sticky; top: 0; background: #fafafa;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer; user-select: none;
+    font-weight: 600;
+  }
+  thead th:hover { background: #f0f0f0; }
+  thead th .arrow { color: #888; margin-left: 4px; font-size: 0.85em; }
+  tbody tr:hover { background: #fafafa; }
+  td.year, th.year { white-space: nowrap; width: 70px; }
+  td.author, th.author { white-space: nowrap; width: 110px; }
+  td.kind, th.kind { white-space: nowrap; width: 80px; }
+  td.journal, th.journal { width: 180px; }
+  td.title { line-height: 1.45; }
+  mark { background: #fff5a3; padding: 0; }
+  .note { color: #666; font-size: 0.85rem; margin-top: 14px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>제주방언 문법 연구 서지 (총 175편)</h1>
+    <nav><a href="index.html">← 형식 × 기능 히트맵으로 돌아가기</a></nav>
+  </header>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="저자/제목/학회지 검색…" autocomplete="off" />
+    <span class="count" id="count"></span>
+  </div>
+
+  <table id="t">
+    <thead>
+      <tr>
+        <th class="author" data-key="author">저자명<span class="arrow"></span></th>
+        <th class="year" data-key="year">발행년도<span class="arrow"></span></th>
+        <th class="title" data-key="title">제목<span class="arrow"></span></th>
+        <th class="journal" data-key="journal">학회지<span class="arrow"></span></th>
+        <th class="kind" data-key="kind">논문/단행본<span class="arrow"></span></th>
+      </tr>
+    </thead>
+    <tbody id="tb"></tbody>
+  </table>
+
+  <p class="note">
+    헤더 클릭으로 정렬, 상단 검색창으로 필터 (저자명·제목·학회지에 매칭). 데이터: 한국어학사_제주방언 문법 연구사 정리 (260513).
+  </p>
+
+  <script id="rows" type="application/json">[{"author": "김영돈", "year": "1956", "title": "제주 방언의 어미 활용(1)", "journal": "한글", "kind": "논문"}, {"author": "김영돈", "year": "1957", "title": "제주 방언의 어미 활용(2)", "journal": "한글", "kind": "논문"}, {"author": "이숭녕", "year": "1957", "title": "제주도방언의 형태론적 연구", "journal": "동방학지", "kind": "논문"}, {"author": "김영돈", "year": "1958", "title": "제주 방언의 어미 활용(3)", "journal": "한글", "kind": "논문"}, {"author": "박용후", "year": "1960", "title": "제주방언연구(고찰편)", "journal": "과학사", "kind": "단행본"}, {"author": "강근보", "year": "1972", "title": "제주도 방언 「잇다 」 활용고", "journal": "제주대 논문집", "kind": "논문"}, {"author": "강근보", "year": "1977", "title": "제주도방언의 접미사 연구  특히 {ture}를 중심으로", "journal": "제주대 논문집", "kind": "논문"}, {"author": "강근보", "year": "1977", "title": "속격 '-네'의 연구:제주도 방언의 '-네'를 중심으로", "journal": "제주대 논문집", "kind": "논문"}, {"author": "강근보", "year": "1978", "title": "제주도방언의 곡용에 대하여", "journal": "제주대 논문집", "kind": "논문"}, {"author": "강정희", "year": "1975", "title": "제주방언의 동사류 접미사 연구-종지법의 굴절접미사 형태소 분석을 중심으로-", "journal": "이화여대 석사학위논문", "kind": "단행본"}, {"author": "강정희", "year": "1978", "title": "제주 方言의 時相 연구 - 접속 접미사 -단_-당, -안(언)_앙(엉)을 중심으로-", "journal": "이화어문논집", "kind": "논문"}, {"author": "강정희", "year": "1978", "title": "제주방언 접속문의 시제에 관한 일고", "journal": "어학연구", "kind": "논문"}, {"author": "김귀자", "year": "1974", "title": "제주도 방언의 존경접미사 연구", "journal": "이화여대 석사학위논문", "kind": "단행본"}, {"author": "김승태", "year": "1972", "title": "제주도 방언의 어미 활용에 대해서", "journal": "국문학보", "kind": "논문"}, {"author": "성낙수", "year": "1975", "title": "교육어의 '말입니다', '요'와 제주도 방언 {massim}에 대하여", "journal": "연세어문학", "kind": "논문"}, {"author": "성낙수", "year": "1975", "title": "제주도 방언의 통사론적 연구", "journal": "국어국문학", "kind": "논문"}, {"author": "현평효", "year": "1974", "title": "제주도방언의 정동사어미 연구", "journal": "동국대 박사학위논문", "kind": "단행본"}, {"author": "현평효", "year": "1975", "title": "고려가요에 나타난 -고시- 형태에 대하여", "journal": "국어학", "kind": "논문"}, {"author": "현평효", "year": "1977", "title": "제주도방언의 '-저, -주' 어미에 대하여", "journal": "어문논집", "kind": "논문"}, {"author": "현평효", "year": "1977", "title": "제주도 방언의 존대법", "journal": "국어국문학", "kind": "논문"}, {"author": "현평효", "year": "1977", "title": "제주도 방언의 명령법 어미", "journal": "성봉 김성배 박사 회갑기념논문집", "kind": "논문"}, {"author": "현평효, 김홍식, 강근보", "year": "1974", "title": "제주도 방언의 활용어미에 대한 연구", "journal": "논문집", "kind": "논문"}, {"author": "홍종림", "year": "1975", "title": "제주도 방언의 의문법에 대한 고찰", "journal": "한국어교육학회", "kind": "논문"}, {"author": "홍종림", "year": "1975", "title": "제주도방언의 선어말어미 '-암/엄-, -암시/엄시-, -안/언-, -아시/어시-'에 대하여", "journal": "선청어문", "kind": "논문"}, {"author": "강영봉", "year": "1981", "title": "제주도 방언의 후치사에 대한 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "강정희", "year": "1980", "title": "제주방언 처격 '-디'에 대한 일고찰", "journal": "방언", "kind": "논문"}, {"author": "강정희", "year": "1981", "title": "제주방언의 인용문 연구 - 피인용문의 문장어미를 중심으로-", "journal": "이화어문논집", "kind": "논문"}, {"author": "강정희", "year": "1981", "title": "제주방언의 격형태소에 관한 연구", "journal": "", "kind": "논문"}, {"author": "강정희", "year": "1982", "title": "제주 방언의 문법화 과정에 대하여 - 중세국어와의 대응을 중심으로 -", "journal": "국어학", "kind": "논문"}, {"author": "강정희", "year": "1982", "title": "제주방언의 상태동사의 동작화 과정에 대하여", "journal": "이화어문논집", "kind": "논문"}, {"author": "강정희", "year": "1983", "title": "제주방언의 명사류 접미사에 관한 연구-격표시와 명사구 확장접미사의 통사.의미기능을 중심으로", "journal": "이화여대 박삭학위논문", "kind": "단행본"}, {"author": "강정희", "year": "1987", "title": "제주 방언의 명사류어미의 한 종류 '-(이)랑'에 대하여", "journal": "한남어문학", "kind": "논문"}, {"author": "강정희", "year": "1987", "title": "제주방언의 접속어미와 동작상어미와의 상관성에 대하여", "journal": "국어학", "kind": "논문"}, {"author": "강정희", "year": "1991", "title": "규칙적용과 방언차에 대하여-제주방언 '닮다'구문을 중심으로-", "journal": "국어학", "kind": "논문"}, {"author": "강정희", "year": "1992", "title": "제주방언의 부정응답 현상에 대하여", "journal": "국어학연구백년사, 일조각", "kind": "논문"}, {"author": "강정희", "year": "1994", "title": "방언 분화에 의한 형태 분화 - 제주 방언의 '-이랑'과 '-으란'을 중심으로-", "journal": "이화어문논집", "kind": "논문"}, {"author": "강정희", "year": "1998", "title": "제주 방언의 혼성형에 대하여", "journal": "한남어문학", "kind": "논문"}, {"author": "고영진", "year": "1985", "title": "제주 방언의 인용문 연구", "journal": "연세대 석사학위논문", "kind": ""}, {"author": "고영진", "year": "1991", "title": "제주도 방언의 회상법의 형태와 관련된 몇 가지 문제-회상법의 형태소 정립을 위하여-", "journal": "국어의 이해와 인식, 한국문화사", "kind": ""}, {"author": "김미경", "year": "1987", "title": "제주도방언의 의문법 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "김법순", "year": "1986", "title": "제주도방언의 존대법 연구", "journal": "국문학보", "kind": "논문"}, {"author": "김지홍", "year": "1982", "title": "제주방언의 동사구 보문 연구", "journal": "한국정신문화연구원 석사학위논문", "kind": "단행본"}, {"author": "김지홍", "year": "1984", "title": "한국어 함의동사 연구-제주 서울 방언의 상호대준-", "journal": "탐라문화", "kind": "논문"}, {"author": "김지홍", "year": "1992", "title": "{-겠-}에 대응하는 {-(으)크-}에 대하여:특히 분석 오류의 시정과 분포 확립을 중심으로 하여", "journal": "제주도언어민속논총, 제주문화", "kind": "논문"}, {"author": "김홍식", "year": "1983", "title": "제주도방언의 접미사 고-인칭접미사를 중심으로-", "journal": "탐라문화", "kind": "논문"}, {"author": "문숙영", "year": "1998", "title": "제주도 방언의 시상 형태에 대한 연구", "journal": "서울대 석사학위논문", "kind": "단행본"}, {"author": "문순덕", "year": "1987", "title": "제주도 방언의 형태소 '-서'에 관한 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "문순덕", "year": "1997", "title": "제주 방언 부정 응답 구문", "journal": "탐라문화", "kind": "논문"}, {"author": "문순덕", "year": "1997", "title": "제주방언 '엇다'에 의한 부정표현", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕", "year": "1998", "title": "제주 방언 '말다'의 의미 기능", "journal": "탐라문화", "kind": "논문"}, {"author": "문순덕", "year": "1999", "title": "제주 방언 '모르다'의 부정 표현에 대하여", "journal": "탐라문화", "kind": "논문"}, {"author": "문순덕", "year": "1999", "title": "제주 방언의 장형 부정문 소고", "journal": "영주어문", "kind": "논문"}, {"author": "성낙수", "year": "1980", "title": "제주도 방언의 간접인용문 연구", "journal": "청주사범대학 논문집", "kind": "논문"}, {"author": "성낙수", "year": "1981", "title": "제주도 방언의 {-am/-əm}에 대하여", "journal": "동대어문", "kind": "논문"}, {"author": "성낙수", "year": "1982", "title": "제주도 방언의 접속사 연구-[이유.원인]을 나타내는 접속사를 중심으로-", "journal": "한글", "kind": "논문"}, {"author": "성낙수", "year": "1984", "title": "제주도 방언의 풀이씨의 이음법 연구", "journal": "정음사(박사학위논문)", "kind": "단행본"}, {"author": "송상조", "year": "1991", "title": "제주도 방언의 접미 파생어 연구", "journal": "동아대 박사학위논문", "kind": "단행본"}, {"author": "송상조", "year": "1992", "title": "제주도 방언 '-ㅇ, -ㄴ' 형태소에 관한 고찰", "journal": "동아어문논집", "kind": "논문"}, {"author": "송상조", "year": "1993", "title": "형태소 '-ㅇ, -ㄴ'과 안맺음씨끝의 호응", "journal": "탐라문화", "kind": "논문"}, {"author": "송상조", "year": "1994", "title": "형태소 '엉'에 대한 고찰", "journal": "탐라문화", "kind": "논문"}, {"author": "오학수", "year": "1986", "title": "제주도방언의 시상에 관한 일고", "journal": "백록어문", "kind": "논문"}, {"author": "우창현", "year": "1995", "title": "제주방언의 시상선어말 어미에 대하여-2인칭 의문문에 나타나는 시상체계를 중심으로-", "journal": "서강어문", "kind": "논문"}, {"author": "우창현", "year": "1997", "title": "제주 방언의 시상범주에 대하여-'암시'와 '아시'를 중심으로", "journal": "서강어문", "kind": "논문"}, {"author": "이강식", "year": "1989", "title": "제주도 방언의 존대의문법 고찰", "journal": "청람어문교육", "kind": "논문"}, {"author": "정승철", "year": "1985", "title": "제주도 방언의 의문법 어미에 대한 일고찰", "journal": "관악어문연구", "kind": "논문"}, {"author": "정승철", "year": "1997", "title": "제주도 방언 어미의 형태음소론-인용어미를 중심으로", "journal": "애산학보", "kind": "논문"}, {"author": "정영진", "year": "1983", "title": "제주방언의 종결어미 연구-동사의 종결어미를 중심으로-", "journal": "동악어문논집", "kind": "논문"}, {"author": "정운택", "year": "1983", "title": "제주도 방언의 격어미 연구", "journal": "청주대학교 석사학위논문", "kind": "단행본"}, {"author": "최학규", "year": "1989", "title": "제주방언의 서법체계 연구-어말어미 활용을 중심으로-", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "한영균", "year": "1984", "title": "제주방언 동명사 어미의 통사기능", "journal": "국어학", "kind": "논문"}, {"author": "현평효", "year": "1991", "title": "제주도 방언 존대법의 특징", "journal": "새국어생활", "kind": "논문"}, {"author": "홍종림", "year": "1981", "title": "제주도방언의 선어말어미 '-크-'에 대하여", "journal": "선청어문", "kind": "논문"}, {"author": "홍종림", "year": "1983", "title": "제주도방언의 소위 회상법형태에 대하여", "journal": "국어교육", "kind": "논문"}, {"author": "홍종림", "year": "1984", "title": "제주도 방언의 선어말어미 \"-느-\"에 대한 시고", "journal": "논문집", "kind": "논문"}, {"author": "홍종림", "year": "1987", "title": "제주방언의 아스펙트 형태에 대하여", "journal": "국어국문학", "kind": "논문"}, {"author": "홍종림", "year": "1991", "title": "제주방언의 양태와 상범주 연구", "journal": "성균관대 박사학위논문", "kind": "단행본"}, {"author": "홍종림", "year": "1994", "title": "제주방언의 평서법어미에 대한 고찰(1)", "journal": "선청어문", "kind": "논문"}, {"author": "홍종림", "year": "1995", "title": "제주방언의 상대존대형태에 대하여-사라진 '-ᄋᆞ/으ᅌᅵ-'의 자취를 찾아서", "journal": "", "kind": "논문"}, {"author": "강남국", "year": "2000", "title": "제주 방언의 명령 화행 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "강인자", "year": "2004", "title": "제주 방언 조사 '-광'에 관한 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "강정희", "year": "2001", "title": "제주방언의 '-아/-어지다' 구문연구", "journal": "한남어문학", "kind": "논문"}, {"author": "강정희", "year": "2002", "title": "제주방언 공간 명사의 문법화 현상-부사 ㅎ 끔, ㅎ 썰, 고쌔의 형성과정을 중심으로", "journal": "한국언어문학", "kind": "논문"}, {"author": "강정희", "year": "2004", "title": "제주방언의 시간 표현 구조 - '글지후제'의 형태변화 과정에 대해서-'", "journal": "어문연구", "kind": "논문"}, {"author": "강정희", "year": "2006", "title": "제주방언의 인식양태 표현-형용사 구문의 부사어 '잘도'를 중심으로-", "journal": "한국언어문학", "kind": "논문"}, {"author": "강정희", "year": "2008", "title": "제주방언 동명사 구문의 문법화 연구", "journal": "어문연구", "kind": "논문"}, {"author": "강정희", "year": "2009", "title": "제주방언 혼성형에 대한 생태학적 고찰", "journal": "방언학", "kind": "논문"}, {"author": "강정희", "year": "2009", "title": "제주방언의 보조동사 '-불다'에 관한 형태론적 연구", "journal": "한국언어문학", "kind": "논문"}, {"author": "고영진", "year": "2002", "title": "제주도 방언의 상대높임법의 형태론", "journal": "한글", "kind": "논문"}, {"author": "고영진", "year": "2003", "title": "제주도 방언의 의문법의 형태론-이른바 'ᄒᆞ라체'를 중심으로-", "journal": "한글", "kind": "논문"}, {"author": "고영진", "year": "2007", "title": "제주도 방언의 형용사에 나타나는 두 가지 [현재 시제]에 대하여", "journal": "한글", "kind": "논문"}, {"author": "고창근", "year": "2001", "title": "제주도 방언 '나다', '지다'에 대하여", "journal": "백록어문", "kind": "논문"}, {"author": "고창근", "year": "2002", "title": "제주도 방언 보조용언 '-어 불다'에 대하여", "journal": "영주어문", "kind": "논문"}, {"author": "김지홍", "year": "2001", "title": "제주 방언 대우법 연구의 몇 가지 문제", "journal": "백록어문", "kind": "논문"}, {"author": "문갑순", "year": "2006", "title": "제주 방언 부사 연구", "journal": "제주대학교 석사학위논문", "kind": "단행본"}, {"author": "문숙영", "year": "2004", "title": "제주 방언의 현재시제 형태소에 대하여", "journal": "형태론", "kind": "논문"}, {"author": "문숙영", "year": "2006", "title": "제주방언의 '-엄시-'의 범주와 관련된 몇 문제", "journal": "형태론", "kind": "논문"}, {"author": "문순덕", "year": "2000", "title": "제주도 방언 '시다'의 문법화 현상", "journal": "영주어문", "kind": "논문"}, {"author": "문순덕", "year": "2000", "title": "제주방언 보조용언의 통사.의미", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕", "year": "2000", "title": "제주방언의 제문제: 제주 방언의 보조용언 연구", "journal": "탐라문화", "kind": "논문"}, {"author": "문순덕", "year": "2001", "title": "제주 방언 '-(고정)다', '-고프다'와 '싶다'", "journal": "인문학연구", "kind": "논문"}, {"author": "문순덕", "year": "2001", "title": "제주 방언 이중 부정문의 통사 구조에 대하여", "journal": "영주어문", "kind": "논문"}, {"author": "문순덕", "year": "2002", "title": "제주 방언 보조조사의 담화 기능", "journal": "영주어문", "kind": "논문"}, {"author": "문순덕", "year": "2003", "title": "제주방언 반말체 첨사의 담화기능", "journal": "영주어문", "kind": "논문"}, {"author": "문순덕", "year": "2005", "title": "제주 방언의 간투 표현", "journal": "한글", "kind": "논문"}, {"author": "문순덕", "year": "2005", "title": "제주방언 높임말 첨사의 담화 기능 - '마씀, 양, 예'를 중심으로", "journal": "언어연구", "kind": "논문"}, {"author": "문순덕", "year": "2006", "title": "제주방언 '불다'의 문법화 과정", "journal": "영주어문", "kind": "논문"}, {"author": "양용준", "year": "2003", "title": "제주 방언에서 화행과 함축의 특성", "journal": "언어과학연구", "kind": "논문"}, {"author": "우창현", "year": "2002", "title": "제주 방언 '-암시-'와 중앙어 '-고 있-'과의 상관성-제주 방언 '-암시-'를 중심으로", "journal": "시학과 언어학", "kind": "논문"}, {"author": "우창현", "year": "2003", "title": "제주 방언의 반복상", "journal": "어문연구", "kind": "논문"}, {"author": "우창현", "year": "2003", "title": "상 해석의 이론과 실제:제주방언을 중심으로", "journal": "한국문화사", "kind": "단행본"}, {"author": "우창현", "year": "2004", "title": "제주 방언 보조 용언의 문법화에 대하여-'-어 두-'와 '-어 불-'을 중심으로", "journal": "언어학", "kind": "논문"}, {"author": "우창현", "year": "2005", "title": "제주 방언의 '-느-'에 대하여-'-느-'와 '-ㄴ-'의 상관성을 중심으로-", "journal": "형태론", "kind": "논문"}, {"author": "우창현", "year": "2005", "title": "제주방언 보조용언의 문법적 특성", "journal": "방언학", "kind": "논문"}, {"author": "우창현", "year": "2007", "title": "제주방언 보조용언의 문법 범주와 의미 해석-AM(Aspect-Modality) 범주 설정을 중심으로-", "journal": "어문학", "kind": "논문"}, {"author": "우창현", "year": "2008", "title": "방언 문법 형태 연구 방법-제주방언 선어말어미 '-크-'를 중심으로-", "journal": "방언학", "kind": "논문"}, {"author": "우창현", "year": "2008", "title": "제주방언 선어말어미 의미 해석 문제 - '-암시-', '-아시-'를 중심으로", "journal": "민족문화논총", "kind": "논문"}, {"author": "이기석", "year": "2004", "title": "제주방언의 등위접속사 \"광\"의 분석", "journal": "언어학연구", "kind": "논문"}, {"author": "이효상", "year": "2006", "title": "제주 방언의 '-엄시-'에 대하여: 상표지인가 시제표지인가?", "journal": "형태론", "kind": "논문"}, {"author": "한동완", "year": "2002", "title": "제주방언 청자 경어법의 형태 원리", "journal": "어문연구", "kind": "논문"}, {"author": "홍종림", "year": "2001", "title": "제주방언 연결어미의 '-n', '-n'에 대하여", "journal": "국어학", "kind": "논문"}, {"author": "강정희", "year": "2012", "title": "문법화로 본 제주방언의 가능 표현 연구-'-어지다' 구문을 중심으로-", "journal": "방언학", "kind": "논문"}, {"author": "강정희", "year": "2015", "title": "제주방언 종결어미 '-게'의 양태성에 대하여", "journal": "영주어문", "kind": "논문"}, {"author": "고맹훈", "year": "2018", "title": "제주 방언의 상대높임법에 대한 고찰-상대 높임법 형태와 등급체계를 중심으로", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "고영근", "year": "2019", "title": "제주어의 시상법에 대하여-특히 서사 시상법과 관련하여-", "journal": "구결연구", "kind": "논문"}, {"author": "고영진", "year": "2019", "title": "제주도 방언의 상대높임과 '-느-' -'-수다'와 '-읍네다'는 어떻게 다른가", "journal": "방언학", "kind": "논문"}, {"author": "김공칠", "year": "2011", "title": "제주방언통사론:비교통사론", "journal": "백산", "kind": "단행본"}, {"author": "김미진", "year": "2016", "title": "제주도 방언의 접속부사 연구", "journal": "동남어문논집", "kind": "논문"}, {"author": "김미진", "year": "2016", "title": "제주도 방언의 확인의문문 연구", "journal": "어문논집", "kind": "논문"}, {"author": "김미진", "year": "2018", "title": "제주도 방언의 담화표지에 대한 사회언어학적 연구", "journal": "방언학", "kind": "논문"}, {"author": "김미진", "year": "2019", "title": "제주 방언의 인용 표지 연구", "journal": "영주어문", "kind": "논문"}, {"author": "김보향", "year": "2017", "title": "제주방언 문법 형태의 세대별 변화 연구", "journal": "한국언어문학", "kind": "논문"}, {"author": "김보향", "year": "2019", "title": "제주방언의 피동 연구-'-어지다'를 중심으로-", "journal": "한국언어문학", "kind": "논문"}, {"author": "김지홍", "year": "2014", "title": "제주 방언의 통사 기술과 설명:기본구문의 기능범주 분석", "journal": "경진출판", "kind": "단행본"}, {"author": "김지홍", "year": "2016", "title": "제주 방언의 선어말어미와 종결어미 체계", "journal": "한글", "kind": "논문"}, {"author": "김지홍", "year": "2019", "title": "제주 방언의 인용 구문과 매개변항", "journal": "한글", "kind": "논문"}, {"author": "문순덕", "year": "2011", "title": "제주 구비문학에 나타난 제주방언의 문법 연구", "journal": "영주어문", "kind": "논문"}, {"author": "문순덕, 김원보", "year": "2012", "title": "제주방언 담화표지 '계메' 연구", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕, 김원보", "year": "2013", "title": "제주방언 '처레'와 '셍'의 담화의미", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕, 김원보", "year": "2016", "title": "제주방언에서 '가지다'의 문법화 현상 연구", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕, 김원보", "year": "2017", "title": "제주방언 격조사의 담화 기능", "journal": "언어학연구", "kind": "논문"}, {"author": "문순덕, 김원보", "year": "2018", "title": "제주방언 감정 표현 감탄사의 담화 기능", "journal": "교육과학연구", "kind": "논문"}, {"author": "송상조", "year": "2011", "title": "제주말에서 때가림소 '-ㅇ, -ㄴ'과 씨끝들의 호응", "journal": "한국문화사", "kind": "단행본"}, {"author": "신우봉", "year": "2015", "title": "제주방언 담화표지 '계메'의 음율적 특성과 담화적 기능의 상관관계", "journal": "어문연구", "kind": "논문"}, {"author": "신우봉", "year": "2019", "title": "제주방언 담화표지 '양'의 담화 기능과 운율적 특성", "journal": "방언학", "kind": "논문"}, {"author": "양용준", "year": "2014", "title": "다의성과 구조적 중의성의 차이점 연구-제주방언을 중심으로-", "journal": "언어과학연구", "kind": "논문"}, {"author": "양용준", "year": "2019", "title": "제주방언 담화표지어 '양'에 대한 연구", "journal": "언어과학연구", "kind": "논문"}, {"author": "양창용, 김원보", "year": "2013", "title": "제주어 '게'의 담화적 기능에 대한 고찰", "journal": "언어와 언어학", "kind": "논문"}, {"author": "우창현", "year": "2011", "title": "방언 한국어 교육을 위한 문법 표현 비교 - 시제 선어말어미를 중심으로", "journal": "영남대학교 인문연구", "kind": "논문"}, {"author": "우창현", "year": "2012", "title": "방언 한국어 교육을 위한 존대법 비교 - 표준어와 제주 방언을 중심으로 -", "journal": "언어와 문화", "kind": "논문"}, {"author": "우창현", "year": "2016", "title": "제주 방언 격조사 교육을 위한 기초 연구 -격조사 의미 해석 방법을 중심으로-", "journal": "국제어문", "kind": "논문"}, {"author": "우창현", "year": "2016", "title": "한국어 서술어의 사건 구조-제주 방언을 중심으로-", "journal": "새국어교육", "kind": "논문"}, {"author": "이기갑", "year": "2013", "title": "제주방언의 담화표지 '근'과 '에'", "journal": "방언학", "kind": "논문"}, {"author": "정상철", "year": "2010", "title": "언어접촉과 TAM체계의 변용-제주도방언의 구전설화 자료를 중심으로-", "journal": "일본연구", "kind": "논문"}, {"author": "정성여", "year": "2013", "title": "제주방언의 '-ㄴ다'와 관련 어말형식들의 대립에 대하여", "journal": "방언학", "kind": "논문"}, {"author": "정수빈", "year": "2012", "title": "현기영 소설에 나타난 제주방언 양상-종결법을 중심으로-", "journal": "한국교원대 석사학위논문", "kind": "단행본"}, {"author": "정승철, 김보향", "year": "2013", "title": "제주방언의 설명의문과 판정의문 - 어미의 중화 현상을 중심으로-", "journal": "방언학", "kind": "논문"}, {"author": "김미진", "year": "2021", "title": "제주도 방언의 인용문 연구", "journal": "탐라문화", "kind": "논문"}, {"author": "김보향", "year": "2020", "title": "오사카 지역 제주방언 화자의 언어접촉과 언어변화", "journal": "방언학", "kind": "논문"}, {"author": "김보향", "year": "2020", "title": "제주방언 보조용언 '-어나다'의 의미 기능에 관한 연구", "journal": "방언학", "kind": "논문"}, {"author": "김보향", "year": "2021", "title": "제주방언 연결어미의 세대별 변화 연구", "journal": "방언학", "kind": "논문"}, {"author": "김보향", "year": "2022", "title": "제주방언의 명사형어미 '-ㅁ'의 연구", "journal": "방언학", "kind": "논문"}, {"author": "김보향", "year": "2024", "title": "제주방언 종결어미 '-라'의 통사의미 기능", "journal": "인문학연구", "kind": "논문"}, {"author": "김보향", "year": "2025", "title": "제주방언 '게'의 문법 기능에 관한 고찰", "journal": "방언학", "kind": "논문"}, {"author": "김지홍", "year": "2020", "title": "제주 방언의 복합 구문: 접속문과 내포문 1", "journal": "경진출판", "kind": "단행본"}, {"author": "김지홍", "year": "2021", "title": "제주 방언의 복합 구문: 접속문과 내포문 2", "journal": "경진출판", "kind": "단행본"}, {"author": "김지홍", "year": "2021", "title": "-고' 어미를 매개로 실현된 제주 방언의 내포 구문", "journal": "한글", "kind": "논문"}, {"author": "문숙영", "year": "2025", "title": "언어유형론과 방언 문법-제주방언의 부정문을 중심으로", "journal": "영주어문", "kind": "논문"}, {"author": "신우봉", "year": "2022", "title": "제주방언 20대 화자의 표준어화 현상 연구-문법 형태소를 중심으로-", "journal": "어문논집", "kind": "논문"}, {"author": "전예린", "year": "2024", "title": "제주방언의 명사형 어미 연구", "journal": "서울대 석사학위논문", "kind": "단행본"}, {"author": "전예린, 조윤진", "year": "2025", "title": "제주방언 어미 '-(으)ㄴ게'의 분포 및 의미 기능-증거성(evidentiality)을 중심으로-", "journal": "", "kind": "논문"}, {"author": "조윤진, 전예린", "year": "2025", "title": "제주방언 간접의문소 ‘-(으)ㄴ디’, ‘-산디’, ‘-(으)ㄴ고라’의 형태·통사적 특성", "journal": "방언학", "kind": "논문"}, {"author": "최대희", "year": "2022", "title": "제주 방언의 '-ㅁ, -ㄴ, -ㄹ' 연구", "journal": "한말연구", "kind": "논문"}, {"author": "하영우, 신우봉", "year": "2022", "title": "[제주방언성경]의 형태.통사론적 특징 연구", "journal": "동남어문논집", "kind": "논문"}, {"author": "현혜림", "year": "2020", "title": "제주 방언의 종결형에 나타난 시간 표현 연구", "journal": "제주대 석사학위논문", "kind": "단행본"}, {"author": "김보향", "year": "2023", "title": "제주방언의 피.사동에 대한 고찰", "journal": "한국언어문학", "kind": "논문"}]</script>
+  <script>
+    (function() {
+      const rows = JSON.parse(document.getElementById('rows').textContent);
+      const tb = document.getElementById('tb');
+      const q = document.getElementById('q');
+      const count = document.getElementById('count');
+      const ths = document.querySelectorAll('thead th');
+      let sortKey = 'year';
+      let sortDir = 1; // 1 asc, -1 desc
+
+      function esc(s) {
+        return s.replace(/[&<>"']/g, c => ({
+          '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+        }[c]));
+      }
+
+      function highlight(s, needle) {
+        if (!needle) return esc(s);
+        const lo = s.toLowerCase();
+        const n = needle.toLowerCase();
+        let out = '', i = 0;
+        while (true) {
+          const k = lo.indexOf(n, i);
+          if (k < 0) { out += esc(s.slice(i)); break; }
+          out += esc(s.slice(i, k)) + '<mark>' + esc(s.slice(k, k+n.length)) + '</mark>';
+          i = k + n.length;
+        }
+        return out;
+      }
+
+      function compare(a, b, key) {
+        if (key === 'year') {
+          const ya = parseInt(a.year, 10), yb = parseInt(b.year, 10);
+          if (!isNaN(ya) && !isNaN(yb) && ya !== yb) return ya - yb;
+          if (isNaN(ya) && !isNaN(yb)) return 1;
+          if (!isNaN(ya) && isNaN(yb)) return -1;
+        }
+        const va = (a[key] || '').toString();
+        const vb = (b[key] || '').toString();
+        return va.localeCompare(vb, 'ko');
+      }
+
+      function render() {
+        const needle = q.value.trim();
+        const filtered = needle
+          ? rows.filter(r =>
+              r.author.includes(needle) ||
+              r.title.includes(needle) ||
+              r.journal.includes(needle))
+          : rows.slice();
+        filtered.sort((a, b) => sortDir * compare(a, b, sortKey));
+        tb.innerHTML = filtered.map(r =>
+          '<tr>' +
+            '<td class="author">' + highlight(r.author, needle) + '</td>' +
+            '<td class="year">' + esc(r.year) + '</td>' +
+            '<td class="title">' + highlight(r.title, needle) + '</td>' +
+            '<td class="journal">' + highlight(r.journal, needle) + '</td>' +
+            '<td class="kind">' + esc(r.kind) + '</td>' +
+          '</tr>'
+        ).join('');
+        count.textContent = filtered.length + ' / ' + rows.length + '편';
+        ths.forEach(th => {
+          const a = th.querySelector('.arrow');
+          if (th.dataset.key === sortKey) a.textContent = sortDir === 1 ? '▲' : '▼';
+          else a.textContent = '';
+        });
+      }
+
+      ths.forEach(th => th.addEventListener('click', () => {
+        const k = th.dataset.key;
+        if (k === sortKey) sortDir = -sortDir;
+        else { sortKey = k; sortDir = 1; }
+        render();
+      }));
+
+      q.addEventListener('input', render);
+      render();
+    })();
+  </script>
+</body>
+</html>
